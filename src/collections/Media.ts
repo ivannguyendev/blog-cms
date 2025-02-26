@@ -29,6 +29,14 @@ export const Media: CollectionConfig = {
       //required: true,
     },
     {
+      name: 'folder',
+      type: 'text',
+      access: {
+        update: () => false,
+      },
+      //required: true,
+    },
+    {
       name: 'caption',
       type: 'richText',
       editor: lexicalEditor({
